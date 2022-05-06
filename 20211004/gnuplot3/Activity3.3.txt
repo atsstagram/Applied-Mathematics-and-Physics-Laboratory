@@ -1,0 +1,9 @@
+set terminal eps color enhanced
+set output "Activity3.3.eps"
+set xlabel "{/Symbol a}"
+set ylabel "{/Symbol b}"
+set label 1 "{(c)}" at 0.015,2.55
+set key bottom right
+set log xy
+plot [0.01:1][0.01:3] 2*x title "{{/Symbol g}=1}", exp(x) title "{{/Symbol g}=2}", x**2 title "{{/Symbol g}=3}"
+quit

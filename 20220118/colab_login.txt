@@ -1,0 +1,2 @@
+Chromeでログイン（okamoto.atsushi.38x@st.kyoto-u.ac.jp）してから、
+https://colab.research.google.com/drive/1N0IgLnu1pX0qEoX-jsdk3XgE-_gVnO1A#scrollTo=hQQTnvQlWuf6

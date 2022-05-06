@@ -1,0 +1,12 @@
+set terminal eps color enhanced
+set output "kadai2.time3.eps"
+set clip two
+set xlabel "{n}"
+set ylabel "{m}"
+set zlabel "{time}"
+#set label 1 "{(a)}" at 0.05,1.9
+set key top right
+set logscale z 10
+set format z "10^{%L}"
+splot [6:20][12:380][0.00001:30] 'kadai2.out.txt' u 1:2:5 w points pt 0 title "{節点数n,枝数mと実行時間(s)の関係}"
+quit

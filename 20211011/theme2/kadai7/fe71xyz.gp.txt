@@ -1,0 +1,10 @@
+set terminal eps color enhanced
+set output "fe71xyz.eps"
+set clip two
+set xlabel "{x(t)}"
+set ylabel "{y(t)}"
+set zlabel "{z(t)}"
+#set label 1 "{(a)}" at 0.05,1.9
+set key bottom right
+splot [-25:25][-30:30][-60:60] 'fe71.txt' u 2:3:4 w lp title "{(x(t), y(t), z(t))の軌道}"
+quit

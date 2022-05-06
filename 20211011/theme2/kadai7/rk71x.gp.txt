@@ -1,0 +1,9 @@
+set terminal eps color enhanced
+set output "rk71x.eps"
+set clip two
+set xlabel "{t}"
+set ylabel "{x}"
+#set label 1 "{(a)}" at 0.05,1.9
+set key bottom right
+plot [0:100][-25:25] 'rk71.txt' u 1:2 w lp title "{x(t)}"
+quit

@@ -1,0 +1,148 @@
+\documentclass{jarticle}
+
+
+%2.3のためのnewcommand
+\newcommand{\eqref}[1]{(\ref{#1})}
+
+%2.4のためのnewcommand
+\newcommand{\fracd}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
+
+%図の挿入
+\usepackage[dvipdfmx]{graphicx}
+
+
+\begin{document}
+
+数理工学実験　課題１\\
+2021年10月11日　提出\\
+\\
+工学部情報学科数理工学コース２年\\
+1029-32-7314\\
+岡本淳志
+
+\section{Activity 1}
+
+\subsection{I}
+・記述に飛躍があるので、$(x-1)^2=4$の次に$(x-1)=±4$という式を入れる
+
+・$x=3,-1$だと、「$x=3$かつ$x=-1$」なのか「$x=3$または$x=-1$」なのかがはっきりと分からないので、「$x=3$または$x=-1$」と明記する
+\subsection{II}
+式に飛躍や明確に記されていない部分があるので、以下のように改善する。（改善部分は『』で囲われているところ）\\
+「$x^2−2x−3=0$の問題を考える。平方完成すればよい。この問題は平方完成できる。『平方完成すると、$(x-1)^2=4$という式を得る。これより、$(x-1)=±4$であるから、』解を求めると『$x=3$または$x=-1$』。」
+
+\subsection{III}
+証明\\
+$\sqrt{2}$が無理数であることを背理法を用いて証明する。\\
+$\sqrt{2}$が有理数であると仮定する。互いに素な整数p,q（$q\neq0$）を用いて、
+
+\begin{equation}
+\sqrt{2}=\frac{q}{p}
+\label{eq:有理数}
+\end{equation}
+
+と置くことができる。式 (\ref{eq:有理数})の両辺を二乗すると、
+
+\begin{equation}
+2=\frac{q^2}{p^2}
+\end{equation}
+
+両辺に$p^2$をかけて、
+\begin{equation}
+2p^2=q^2
+\label{eq:有理数の二乗}
+\end{equation}
+
+ここで、式 (\ref{eq:有理数の二乗})の左辺は２の倍数なので$q^2$は２の倍数。すなわち$q$は２の倍数。すると、$q^2$は４の倍数になるので、$p^2$が２の倍数。よって$p$も２の倍数。これは、pとqは互いに素であるという仮定に矛盾する。すなわち、$\sqrt{2}$が有理数であるとした仮定は否定される。\\
+以上より、$\sqrt{2}$が無理数であることが証明された。
+
+\subsection{IV}
+まず、xy座標を用意する。
+そこに、$y=x$, $y=-x$, $y=1$, $(x-\sqrt{2})^2+y^2=1$の図を描く。
+最後にxy座標を取り除けば題意の図形が得られる。
+
+
+
+\section{Activity 2}
+
+\subsection{I}
+関数
+\begin{equation}
+f(x,y)=x^2+y
+\label{関数f}
+\end{equation}
+および
+\begin{equation}
+g(x,y)=y^2+x
+\label{関数g}
+\end{equation}
+を考える. 関数(\ref{関数f})および (\ref{関数g})の値が同時に0となる$(x,y)$を求める.
+
+\subsection{II}
+\begin{table}[h]
+\centering
+\caption{今週の週間天気予報}
+\begin{tabular}{|c||c|c|c|c|c|c|c|}
+  \hline
+  曜日&日&月&火&水&木&金&土\\
+  天気&晴れ&晴れ&晴れ&くもり&くもり&雨&雨→くもり\\
+  \hline
+\end{tabular}
+\end{table}
+
+\subsection{III}
+\begin{equation}
+x^2+y^2=1
+\label{eq:example}
+\end{equation}
+*newcommandを用いて、上式\eqref{eq:example}を参照
+
+\subsection{IV}
+$x=\sin t$
+とすると、
+$\fracd{x}{t}=\cos t$
+である。
+
+
+
+\section{Activity 3}
+
+\subsection{I}
+$\alpha∈[0.01,1]$の範囲において、\\
+・$\beta=2\alpha$\\
+・$\beta=exp(\alpha)$\\
+・$\beta=\alpha^2$\\
+のグラフを同時に描いた図\ref{図Activity3}(a),(b),(c)の作成を行なった。図の作成にはgnuplotを用いた。図は次ページに示す。
+
+\subsection{II}
+\begin{figure}
+\centering
+\includegraphics[width=8cm]{Activity3.1.eps}
+\includegraphics[width=8cm]{Activity3.2.eps}
+\includegraphics[width=8cm]{Activity3.3.eps}
+\caption{
+(a)はリニアスケールの普通のグラフにプロットしたものである。このグラフにおいて$\beta=2\alpha$ ($\gamma=1$)のプロットが直線であることから、この関数が線形関数であることが分かる。\\
+(b)は$y$軸を対数スケールにした片対数グラフにプロットしたものである。このグラフにおいて$\beta=exp(\alpha)$ ($\gamma=2$)のプロットが（傾き$e-1$の）直線であることから、この関数が指数関数であることが分かる。また、$y$軸の目盛りをeの冪乗で示すようにした。\\
+(c)は$x$軸$y$軸ともに対数スケールにした両対数グラフにプロットしたものである。このグラフにおいて$\beta=\alpha^2$($\gamma=3$)のプロットが（傾き$1.1$の）直線であることから、この関数が冪関数であることが分かる。
+}
+\label{図Activity3}
+\end{figure}
+
+これらの関数のそれぞれが、線形関数、指数関数、冪関数であることが一見して分かるように、指数関数には$y$軸を対数スケールにした片対数グラフ、冪関数には$x$軸$y$軸ともに対数スケールにした両対数グラフを用いた。
+
+
+
+\section{参考文献}
+
+・Cloud LaTeX\\
+→https://cloudlatex.io\\
+\\
+・【片対数グラフと両対数グラフとは】\\
+→https://detail-infomation.com/semi-log-plot-and-log-log-plot/\\
+\\
+・gnuplotによるグラフの作成 -数ナビの部屋\\
+→http://yunavi.la.coocan.jp/gnuplot.html
+
+
+
+\end{document}
+

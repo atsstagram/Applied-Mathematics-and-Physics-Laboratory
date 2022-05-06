@@ -1,0 +1,8 @@
+\documentclass{article}
+  \usepackage{graphicx,color}
+  \pagestyle{empty}
+  \begin{document}
+  \begin{figure}[h]
+  \input{./temp.tex}
+  \end{figure}
+  \end{document}

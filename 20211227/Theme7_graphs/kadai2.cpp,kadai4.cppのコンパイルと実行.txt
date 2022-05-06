@@ -1,0 +1,8 @@
+n_6,n_7,...がある階層
+
+コンパイル
+g++ kadai2.cpp -std=c++11 -o path_program
+g++ kadai4.cpp -std=c++11 -o path_program
+
+実行
+./path_program out

@@ -1,0 +1,7 @@
+n_6_m_12.txt,...がある階層
+
+コンパイル
+g++ AMP_2021_path.cpp -std=c++11 -o path_program
+
+実行
+for ((i=24; i<=132; i++)); do ./path_program -f n_12_m_${i}.txt >> n_12.out.txt; done

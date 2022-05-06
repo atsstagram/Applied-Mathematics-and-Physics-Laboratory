@@ -1,0 +1,9 @@
+set terminal eps color enhanced
+set output "31b.eps"
+set clip two
+set xlabel "{i}"
+set ylabel "{I(f)}"
+#set label 1 "{(b)}" at 0.05,1.9
+set key bottom right
+plot [0:10][15:30] '31b.2.txt' u 1:2 w l title "{M=2}", '31b.3.txt' u 1:2 w l title "{M=3}", 0.2*exp(5)-0.2*exp(-5) title "{exact}"
+quit

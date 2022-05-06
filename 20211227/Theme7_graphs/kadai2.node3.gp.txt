@@ -1,0 +1,12 @@
+set terminal eps color enhanced
+set output "kadai2.node3.eps"
+set clip two
+set xlabel "{n}"
+set ylabel "{m}"
+set zlabel "{nodes}"
+#set label 1 "{(a)}" at 0.05,1.9
+set key top right
+set logscale z 10
+set format z "10^{%L}"
+splot [6:20][12:380][1:100000000] 'kadai2.out.txt' u 1:2:4 w points pt 0 title "{節点数n,枝数mと探索したノード数の関係}"
+quit

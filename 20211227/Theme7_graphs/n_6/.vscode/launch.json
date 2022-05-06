@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [
+        ""
+      ],
+      "stopAtEntry": true,
+      "cwd": "/Users/ats/Desktop/数理工学実験/20211227/組合せ最適化_Graphs/n_6",
+      "environment": [],
+      "program": "/Users/ats/Desktop/数理工学実験/20211227/組合せ最適化_Graphs/n_6/build/Debug/outDebug",
+      "internalConsoleOptions": "openOnSessionStart",
+      "MIMode": "gdb",
+      "externalConsole": true
+    }
+  ]
+}

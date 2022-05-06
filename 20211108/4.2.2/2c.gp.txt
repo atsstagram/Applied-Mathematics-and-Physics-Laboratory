@@ -1,0 +1,11 @@
+set terminal eps color enhanced
+set output "2c.eps"
+set clip two
+set xlabel "{i}"
+set ylabel "{I(f)}"
+set ytics pi
+set format y "%.0P{/Symbol p}"
+#set label 1 "{(b)}" at 0.05,1.9
+set key bottom right
+plot [0:10][pi:2*pi] '2c.c.txt' u 1:2 w l title "{Midpoint}", '2c.t.txt' u 1:2 w l title "{Trapezoid}", '2c.s.txt' u 1:2 w l title "{Simpson}", 2+pi title "{exact}"
+quit

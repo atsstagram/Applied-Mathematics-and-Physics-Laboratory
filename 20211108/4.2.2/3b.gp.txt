@@ -1,0 +1,9 @@
+set terminal eps color enhanced
+set output "3b.eps"
+set clip two
+set xlabel "{i}"
+set ylabel "{E_n(f)}"
+#set label 1 "{(b)}" at 0.05,1.9
+set key bottom right
+plot [0:10][-30:120] '3b.c.txt' u 1:2 w l title "{Midpoint}", '3b.t.txt' u 1:2 w l title "{Trapezoid}", '3b.s.txt' u 1:2 w l title "{Simpson}"
+quit

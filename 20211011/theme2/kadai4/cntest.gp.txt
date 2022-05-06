@@ -1,0 +1,8 @@
+set terminal eps color enhanced
+set output "cntest.eps"
+set xlabel "{t}"
+set ylabel "{u}"
+set label 1 "{(a)}" at 0.05,2.75
+set key bottom right
+plot [0:10][0:1] 0.9*exp(-10*x)+0.1 title "{exact}"
+quit

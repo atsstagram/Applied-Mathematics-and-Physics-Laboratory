@@ -1,0 +1,9 @@
+set terminal eps color enhanced
+set output "fept2.100.eps"
+set clip two
+set xlabel "{t}"
+set ylabel "{u}"
+#set label 1 "{(a)}" at 0.05,1.9
+set key bottom left
+plot [0:10][-100:100] 'fept2.01.txt' u 1:2 w l title "{0.1}",  'fept2.001.txt' u 1:2 w l title "{0.01}", 'fept2.0001.txt' u 1:2 w l title "{0.001}", 0.5*exp(-2*x)+0.5 title "{exact}"
+quit

@@ -1,0 +1,9 @@
+set terminal eps color enhanced
+set output "h.eps"
+set clip two
+set xlabel "{t}"
+set ylabel "{u}"
+#set label 1 "{(b)}" at 0.05,1.9
+set key bottom right
+plot [0:10][0:10] 'h.01.txt' u 1:2 w l title "{0.1}", 'h.04.txt' u 1:2 w l title "{0.4}", 'h.05.txt' u 1:2 w l title "{0.5}", 0.9*exp(-10*x)+0.1 title "{exact}"
+quit

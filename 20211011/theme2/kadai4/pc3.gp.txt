@@ -1,0 +1,9 @@
+set terminal eps color enhanced
+set output "pc3.eps"
+set clip two
+set xlabel "{t}"
+set ylabel "{u}"
+#set label 1 "{(b)}" at 0.05,1.9
+set key bottom right
+plot [0:10][0:1] 'pc3.01.txt' u 1:2 w l title "{0.1}", 'pc3.02.txt' u 1:2 w l title "{0.2}", 'pc3.03.txt' u 1:2 w l title "{0.3}", 0.9*exp(-10*x)+0.1 title "{exact}"
+quit

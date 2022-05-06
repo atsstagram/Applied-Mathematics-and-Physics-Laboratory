@@ -1,0 +1,9 @@
+set terminal eps color enhanced
+set output "cn2.eps"
+set clip two
+set xlabel "{x}"
+set ylabel "{u}"
+#set label 1 "{(b)}" at 0.05,1.9
+set key bottom right
+plot [0:10][0:0.25] 'cn2.1.txt' u 1:2 w l title "{t=1}", 'cn2.2.txt' u 1:2 w l title "{t=2}", 'cn2.3.txt' u 1:2 w l title "{t=3}", 'cn2.4.txt' u 1:2 w l title "{t=4}", 'cn2.5.txt' u 1:2 w l title "{t=5}"
+quit

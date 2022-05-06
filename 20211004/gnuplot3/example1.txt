@@ -1,0 +1,8 @@
+set terminal eps color enhanced
+set output "example1.eps"
+set xlabel "{/Symbol a}"
+set ylabel "{/Symbol b}"
+set label 1 "{(a)}" at -2.8,0.9
+set key at 3, -0.5
+plot [-pi:pi][-1.1:1.1] sin(x) title "{{/Symbol g}=1}", sin(x)**2 title "{{/Symbol g}=2}", sin(x)**3 title "{{/Symbol g}=3}"
+quit

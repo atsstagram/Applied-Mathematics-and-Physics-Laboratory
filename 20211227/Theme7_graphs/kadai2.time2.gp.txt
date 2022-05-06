@@ -1,0 +1,11 @@
+set terminal eps color enhanced
+set output "kadai2.time2.eps"
+set clip two
+set xlabel "{m}"
+set ylabel "{time}"
+#set label 1 "{(a)}" at 0.05,1.9
+set key bottom right
+set logscale y 10
+set format y "10^{%L}"
+plot [12:380][0.00001:30] 'kadai2.out.txt' u 2:5 w points pt 0 title "{節点数mと実行時間(s)の関係}"
+quit

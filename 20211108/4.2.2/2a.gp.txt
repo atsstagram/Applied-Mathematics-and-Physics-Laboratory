@@ -1,0 +1,9 @@
+set terminal eps color enhanced
+set output "2a.eps"
+set clip two
+set xlabel "{i}"
+set ylabel "{I(f)}"
+#set label 1 "{(b)}" at 0.05,1.9
+set key bottom right
+plot [0:10][0.5:1] '2a.c.txt' u 1:2 w l title "{Midpoint}", '2a.t.txt' u 1:2 w l title "{Trapezoid}", '2a.s.txt' u 1:2 w l title "{Simpson}", log(2) title "{exact}"
+quit
