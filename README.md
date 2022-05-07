@@ -17,4 +17,4 @@ Kyoto University B2
 
 ## [20211227](https://github.com/atsstagram/Applied-Mathematics-and-Physics-Laboratory/tree/master/20211227) 組合せ最適化
 
-## [20220118](https://github.com/atsstagram/Applied-Mathematics-and-Physics-Laboratory/tree/master/20210118) ニューラルネットワークによる機械学習
+## [20220118](https://github.com/atsstagram/Applied-Mathematics-and-Physics-Laboratory/tree/master/20220118) ニューラルネットワークによる機械学習
