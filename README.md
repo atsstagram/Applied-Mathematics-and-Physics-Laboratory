@@ -1,7 +1,7 @@
 # Applied-Mathematics-and-Physics-Laboratory
 Kyoto University B2
 
-このレポジトリは大学の実験で用いたコードを一部アップロードしたものです。
+このレポジトリは大学の実験で用いたコードファイルなどを一部アップロードしたものです。（ディレクトリ内にはgnuplotなどレポート作成に用いたものも混ざっているので、コードは拡張子が「.py」「.c」「.cpp」となっているものを参照してください）
 
 課題の内容については「[数理工学実験テキスト](https://github.com/atsstagram/Applied-Mathematics-and-Physics-Laboratory/blob/master/数理工学実験テキスト_2021.pdf)」を参照してください。
 
